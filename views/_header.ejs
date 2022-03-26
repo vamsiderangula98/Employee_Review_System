@@ -1,0 +1,16 @@
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Employee Review System</a>
+          <form class="d-flex">
+            <% if(locals.user && locals.user.isAdmin) { %>
+                <a class="navbar-brand" href="/admin/assignworks" type="GET">Assign Work</a>
+                <a class="navbar-brand" href="/admin/view_employees" type="GET">Employees</a>
+                <a class="navbar-brand" href="/users/sign-out" type="GET">Signout</a>
+            <%} else {  %>
+                <a class="navbar-brand" href="/users/sign-out" type="GET">Signout</a>
+            <% } %>
+          </form>
+        </div>
+      </nav>
+</header>
