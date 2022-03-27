@@ -1,0 +1,45 @@
+
+body{
+    background:linear-gradient(40deg,lightblue,lightpink);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.w-55{
+    width:37% !important;
+}
+
+.w-60{
+    width:70%;
+}
+
+.mt-6{
+    margin-top: 100px;
+}
+.signin-container{
+    border-radius: 1rem 1rem!important;
+    border:2px solid grey!important ;
+    background-color:rgb(240, 228, 206);
+  
+}
+.header{
+    background-color: rgb(31, 31, 65)!important;
+}
+
+.center-alligned{
+    display: flex;
+    justify-content: center;
+}
+
+.td-n{
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer{
+    background-color: rgb(21, 21, 56);
+    color:wheat;
+    margin-top:8vh;
+    height:6.5vh;
+    text-align: end;
+    padding-top: 8px;
+
+}

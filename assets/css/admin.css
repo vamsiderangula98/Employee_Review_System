@@ -1,0 +1,42 @@
+.f{
+    display:flex;
+    justify-content: space-around;
+}
+
+.w-40{
+    width:40%;
+}
+
+.w-8{
+    width:85%;
+}
+
+.m-n{
+    margin-bottom: -30px;
+}
+
+.mt-7{
+    margin-top: 170px;
+}
+
+.footer{
+    background-color: rgb(21, 21, 56);
+    color:wheat;
+    margin-top:6.5vh;
+    height:6.5vh;
+    text-align: end;
+    padding-top: 8px;
+}
+body{
+    background:linear-gradient(40deg,lightblue,lightpink);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.assign-container,.make-admin-container{
+    border-radius: 1rem 1rem!important;
+    border:2px solid grey!important ;
+    background-color:rgb(240, 228, 206);
+}
+.header{
+    background-color: rgb(31, 31, 65)!important;
+}

@@ -1,0 +1,44 @@
+.f{
+    display: flex;
+   justify-content: space-around;
+}
+
+.b{
+    font-weight: bold;
+}
+
+.w-15{
+    width:15%;
+}
+
+.w-30{
+    width: 30%;
+}
+@media(max-width: 600px) {
+    .f{
+        display: block;
+    }
+}
+.header{
+    background-color: rgb(31, 31, 65)!important;
+}
+body{
+    background:linear-gradient(40deg,lightblue,lightpink);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.footer{
+    background-color: rgb(21, 21, 56);
+    color:wheat;
+    margin-top:7vh;
+    height:6.5vh;
+    text-align: end;
+    padding-top: 8px;
+}
+.employee-list{
+    border-radius: 1rem 1rem!important;
+    border:2px solid grey!important ;
+    background-color:rgb(240, 228, 206);
+   min-height: 75vh;
+}

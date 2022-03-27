@@ -1,15 +1,19 @@
 <header>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class=" header navbar navbar-dark bg-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">Employee Review System</a>
+          <h1> <a style="color:greenyellow" class="navbar-brand" href="/">Employee Review System</a></h1>
+         
           <form class="d-flex">
             <% if(locals.user && locals.user.isAdmin) { %>
-                <a class="navbar-brand" href="/admin/assignworks" type="GET">Assign Work</a>
-                <a class="navbar-brand" href="/admin/view_employees" type="GET">Employees</a>
-                <a class="navbar-brand" href="/users/sign-out" type="GET">Signout</a>
-            <%} else {  %>
-                <a class="navbar-brand" href="/users/sign-out" type="GET">Signout</a>
-            <% } %>
+                <a style="color:orange;"class="navbar-brand" href="/admin/assignworks" type="GET">Assign Work</a>
+                <a style="color:orange;" class="navbar-brand" href="/admin/view_employees" type="GET">Employees</a>
+                <a style="color:red;"class="navbar-brand" href="/users/sign-out" type="GET">Sign out</a>
+            <%} else if(locals.user){  %>
+                <a style="color:red;"class="navbar-brand" href="/users/sign-out" type="GET">Sign out</a>
+            <% } else{%>
+            <h1>.</h1>  
+              <%}%>
+
           </form>
         </div>
       </nav>
