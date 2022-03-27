@@ -1,7 +1,7 @@
 //initial setup
 const express = require("express");
 const app = express();
-const port = 8000;
+const port =8000;
 const cors = require("cors");
 const db = require("./config/mongoose");
 const session = require("express-session");
@@ -29,7 +29,7 @@ app.use(
     },
     store: MongoStore.create(
       {
-        mongoUrl:'mongodb://localhost/Employeee_Review_System',
+        mongoUrl:"mongodb+srv://vamsid98:vamsi@cluster0.6tlkj.mongodb.net/Employee_review_system" ,
         collectionName:'sessions',
         mongooseConnection: db,
         autoRemove: "disabled",
