@@ -3,7 +3,7 @@ const LocalStrategy = require("passport-local").Strategy;
 
 const User = require("../models/user");
 
-//ussing local strategy of passport for authentication
+//ussing local strategy of passport for authentication purpose
 passport.use(
   new LocalStrategy(
     {
@@ -48,7 +48,7 @@ passport.checkAuthentication = function (req, res, next) {
   }
   return res.redirect("/users/login");
 };
-
+//setting authenticated user to locals
 passport.setAuthenticatedUser = function (req, res, next) {
   if (req.isAuthenticated()) {
     res.locals.user = req.user;

@@ -52,7 +52,7 @@ module.exports.logIn=function(req,res){
 
 //create-session controller
 module.exports.createSession=function(req,res){
-    console.log("signIn sucessfull");
+    console.log("You are Sucessfully Signed in");
     return res.redirect('/');
 }
 
@@ -99,6 +99,6 @@ module.exports.createUser=async function(req,res){
 //logging out the user 
 module.exports.signout=function(req,res){
     req.logout();
-    console.log("logout");
+    console.log("You are logged out successfully");
     return res.redirect("/");
 }
